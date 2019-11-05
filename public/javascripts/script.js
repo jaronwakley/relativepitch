@@ -1,11 +1,11 @@
 var app = new Vue({
   el: '#app',
   data: {
-    instruments: ["Piano", "Clarinet", "Trumpet", "Euphonium", "Harmonica", "Organ"]
+    instruments: ["Piano", "Clarinet", "Trumpet", "Harmonica", "Organ"]
   },
   methods: {
     GetIntervalREST() {
-      var url = "getinterval?instrument=" + this.instruments[0];
+      var url = "getinterval?instrument=" + this.instruments[4];
       fetch(url)
         .then((data) => {
           return (data.json());
@@ -25,7 +25,7 @@ var app = new Vue({
         });
     },
     PlayNote(note) {
-        new Audio("sound/" + note).play();
+        new Audio(note).play();
     }
   }
 });
