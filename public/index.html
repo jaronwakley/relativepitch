@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="stylesheets/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
   <title>Relative Pitch</title>
 </head>
 
@@ -31,8 +31,8 @@
   </div>
   <div id="app">
 
-    <form v-on:submit.prevent="GetIntervalREST">
-      <button type="submit">Play Interval</button>
+    <form v-on:submit.prevent="ReplayInterval">
+      <button type="submit">Replay Interval</button>
     </form>
     <br>
     <table class="center">
@@ -46,28 +46,30 @@
         <td>
           <button>Minor Third</button>
         </td>
+      </tr>
+      <tr>
         <td>
           <button>Major Third</button>
         </td>
-      </tr>
-      <tr>
         <td>
           <button>Perfect Fourth</button>
         </td>
         <td>
           <button>Tritone</button>
         </td>
+      </tr>
+      <tr>
         <td>
           <button>Perfect Fifth</button>
         </td>
         <td>
           <button>Minor Sixth</button>
         </td>
-      </tr>
-      <tr>
         <td>
           <button>Major Sixth</button>
         </td>
+      </tr>
+      <tr>
         <td>
           <button>Minor Seventh</button>
         </td>
@@ -80,7 +82,7 @@
       </tr>
     </table>
     
-    <div id="scorecard"> You have answered {{correct}} out of {{total}}!</div>
+    <div id="scorecard"> You have answered {{correct}} out of {{total}} correctly!</div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
   <script src="javascripts/script.js"></script>

@@ -10,18 +10,18 @@ a {
 }
 
 #front {
-  font-family: Lobster, cursive;
+  font-family: 'Pacifico', cursive;
+  padding: auto;
 }
 
 #topper {
   border-radius: 10px;
   background-color: #eb7597;
-  height: 50px;
+  height: 100px;
   border-style: outset;
-  vertical-align: top;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, #scorecard {
   text-align: center;
   color: #ffffff;
 }
@@ -29,6 +29,10 @@ h1, h2, h3, p {
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+button {
+  width: 125px;
 }
 
 #settings {
