@@ -26,7 +26,8 @@
     <div>
       <h2 id="directions">Instructions</h2>
       <h3>Turn on your Sound!</h3>
-      <p>Listen to the two notes played and click the interval that was played. If it is correct, you will score a point!</p>
+      <p>Listen to the two notes played and click the interval that was played.</p>
+      <p>If it is correct, you will score a point!</p>
     </div>
   </div>
   <div id="app">
@@ -35,7 +36,7 @@
       <button type="submit">{{ playButtonText }}</button>
     </form>
     <br>
-    <table class="center" style="max-width: 80%;">
+    <table style="max-width: 80%;">
       <tr>
         <td>
           <form v-on:submit.prevent="Interval1Guessed">
