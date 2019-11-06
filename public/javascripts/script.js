@@ -3,8 +3,8 @@ var app = new Vue({
   data: {
     instruments: ["Piano", "Clarinet", "Trumpet", "Harmonica", "Organ"],
     selectedInstument: "",
-    correct: "",
-    total: "",
+    correct: 0,
+    total: 0,
     intervalInfo: "",
     playButtonText: "Start"
   },
@@ -25,10 +25,12 @@ var app = new Vue({
     },
     StartOrReplayInterval() {
         if (this.playButtonText == "Start") {
+            console.log("start");
             this.playButtonText = "Replay Interval";
             this.GetIntervalREST();
         }
         else {
+            console.log("replay");
             this.PlayNotes(this.IntervalInfo);
         }
     },
