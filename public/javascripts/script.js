@@ -6,7 +6,8 @@ var app = new Vue({
     correct: 0,
     total: 0,
     intervalInfo: "",
-    playButtonText: "Start"
+    playButtonText: "Start",
+    result: ""
   },
   methods: {
     GetIntervalREST() {
@@ -47,8 +48,12 @@ var app = new Vue({
         new Audio(note).play();
     },
     IntervalGuessed(guess) {
-        if (guess == this.interval){
+        if (guess == this.intervalInfo.interval) {
+            this.result = "Correct";
             this.correct += 1;
+        }
+        else {
+            this.result = "Incorrect";
         }
         this.total += 1;
         // You might need to have a delay here.
