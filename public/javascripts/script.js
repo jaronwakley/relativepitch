@@ -49,11 +49,11 @@ var app = new Vue({
     },
     IntervalGuessed(guess) {
         if (guess == this.intervalInfo.interval) {
-            this.result = "Correct";
+            this.result = "You were correct!";
             this.correct += 1;
         }
         else {
-            this.result = "Incorrect";
+            this.result = "You were incorrect!";
         }
         this.total += 1;
         // You might need to have a delay here.
