@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="stylesheets/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
   <title>Relative Pitch</title>
 </head>
 
 <body>
   <div id="topper">
-    <h1>Relative Pitch</h1>
+    <h1 id="front">Relative Pitch</h1>
   </div>
   <div id="settings">
     <div style="align-text: center;">
@@ -22,7 +23,11 @@
         <option value="Organ">Organ</option>
       </select>
     </div>
-    <h2 id="directions">Instructions</h2>
+    <div style="max-width: 25%;">
+      <h2 id="directions">Instructions</h2>
+      <h3>Turn on your Sound!</h3>
+      <p>Listen to the two notes played and click the interval that was played. If it is correct, you will score a point!</p>
+    </div>
   </div>
   <div id="app">
 
@@ -74,6 +79,8 @@
         </td>
       </tr>
     </table>
+    
+    <div id="scorecard"> You have answered {{correct}} out of {{total}}!</div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
   <script src="javascripts/script.js"></script>
