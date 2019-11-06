@@ -27,12 +27,14 @@ h1, h2, h3, p, #scorecard {
 }
 
 .center {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 button {
-  width: 125px;
+  width: 100px;
+  height: 35px;
 }
 
 #settings {

@@ -23,7 +23,7 @@
         <option value="Organ">Organ</option>
       </select>
     </div>
-    <div style="max-width: 25%;">
+    <div>
       <h2 id="directions">Instructions</h2>
       <h3>Turn on your Sound!</h3>
       <p>Listen to the two notes played and click the interval that was played. If it is correct, you will score a point!</p>
@@ -31,11 +31,11 @@
   </div>
   <div id="app">
 
-    <form v-on:submit.prevent="ReplayInterval">
-      <button type="submit">Replay Interval</button>
+    <form v-on:submit.prevent="StartOrReplayInterval">
+      <button type="submit">{{ playButtonText }}</button>
     </form>
     <br>
-    <table class="center">
+    <table class="center" style="max-width: 80%;">
       <tr>
         <td>
           <button>Minor Second</button>
