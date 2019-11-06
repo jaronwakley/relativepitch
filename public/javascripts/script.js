@@ -31,7 +31,7 @@ var app = new Vue({
         }
         else {
             console.log("replay");
-            this.PlayNotes(this.IntervalInfo);
+            this.PlayNotes(this.intervalInfo);
         }
     },
     PlayNotes(intervalInfo) {
