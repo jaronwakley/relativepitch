@@ -51,6 +51,42 @@ var app = new Vue({
         this.total += 1;
         // You might need to have a delay here.
         this.GetIntervalREST();
+    },
+    Interval1Guessed() {
+        this.IntervalGuessed(1);
+    },
+    Interval2Guessed() {
+        this.IntervalGuessed(2);
+    },
+    Interval3Guessed() {
+        this.IntervalGuessed(3);
+    },
+    Interval4Guessed() {
+        this.IntervalGuessed(4);
+    },
+    Interval5Guessed() {
+        this.IntervalGuessed(5);
+    },
+    Interval6Guessed() {
+        this.IntervalGuessed(6);
+    },
+    Interval7Guessed() {
+        this.IntervalGuessed(7);
+    },
+    Interval8Guessed() {
+        this.IntervalGuessed(8);
+    },
+    Interval9Guessed() {
+        this.IntervalGuessed(9);
+    },
+    Interval10Guessed() {
+        this.IntervalGuessed(10);
+    },
+    Interval11Guessed() {
+        this.IntervalGuessed(11);
+    },
+    Interval12Guessed() {
+        this.IntervalGuessed(12);
     }
   }
 });
