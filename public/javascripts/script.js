@@ -1,11 +1,14 @@
 var app = new Vue({
   el: '#app',
   data: {
-    instruments: ["Piano", "Clarinet", "Trumpet", "Harmonica", "Organ"]
+    instruments: ["Piano", "Clarinet", "Trumpet", "Harmonica", "Organ"],
+    selectedInstument: ""
   },
   methods: {
     GetIntervalREST() {
-      var url = "getinterval?instrument=" + this.instruments[4];
+      var selection = document.getElementById("selector");
+      this.selectedInstument = selection.value;
+      var url = "getinterval?instrument=" + this.selectedInstument;
       fetch(url)
         .then((data) => {
           return (data.json());
