@@ -1,8 +1,46 @@
 body {
-  padding: 50px;
+  padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #282091;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
 }
+
+#topper {
+  border-radius: 10px;
+  background-color: #eb7597;
+  height: 50px;
+  border-style: outset;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.center {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+#settings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#selector {
+  height: 20px;
+  width: 50%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+}
+
