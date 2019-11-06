@@ -38,46 +38,70 @@
     <table class="center" style="max-width: 80%;">
       <tr>
         <td>
-          <button>Minor Second</button>
+          <form v-on:submit.prevent="Interval1Guessed">
+            <button type="submit">Minor Second</button>
+          </form>
         </td>
         <td>
-          <button>Major Second</button>
+          <form v-on:submit.prevent="Interval2Guessed">
+            <button type="submit">Major Second</button>
+          </form>
         </td>
         <td>
-          <button>Minor Third</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button>Major Third</button>
-        </td>
-        <td>
-          <button>Perfect Fourth</button>
-        </td>
-        <td>
-          <button>Tritone</button>
+          <form v-on:submit.prevent="Interval3Guessed">
+            <button type="submit">Minor Third</button>
+          </form>
         </td>
       </tr>
       <tr>
         <td>
-          <button>Perfect Fifth</button>
+          <form v-on:submit.prevent="Interval4Guessed">
+            <button type="submit">Major Third</button>
+          </form>
         </td>
         <td>
-          <button>Minor Sixth</button>
+          <form v-on:submit.prevent="Interval5Guessed">
+            <button type="submit">Perfect Fourth</button>
+          </form>
         </td>
         <td>
-          <button>Major Sixth</button>
+          <form v-on:submit.prevent="Interval6Guessed">
+            <button type="submit">Tritone</button>
+          </form>
         </td>
       </tr>
       <tr>
         <td>
-          <button>Minor Seventh</button>
+          <form v-on:submit.prevent="Interval7Guessed">
+            <button type="submit">Perfect Fifth</button>
+          </form>
         </td>
         <td>
-          <button>Major Seventh</button>
+          <form v-on:submit.prevent="Interval8Guessed">
+            <button type="submit">Minor Sixth</button>
+          </form>
         </td>
         <td>
-          <button>Octave</button>
+          <form v-on:submit.prevent="Interval9Guessed">
+            <button type="submit">Major Sixth</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <form v-on:submit.prevent="Interval10Guessed">
+            <button type="submit">Minor Seventh</button>
+          </form>
+        </td>
+        <td>
+          <form v-on:submit.prevent="Interval11Guessed">
+            <button type="submit">Major Seventh</button>
+          </form>
+        </td>
+        <td>
+          <form v-on:submit.prevent="Interval12Guessed">
+            <button type="submit">Octave</button>
+          </form>
         </td>
       </tr>
     </table>
